@@ -1,6 +1,5 @@
 objects = ['potato', 'test', 'object']
 print(f"Here are your options, please choose one: {', '.join(objects)}")
-
 index = 0
 
 input("Please choose an option: ")
