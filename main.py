@@ -1,7 +1,7 @@
 indexalpha = 0
 theobjects = ['potato', 'test', 'yesandno']
 print("These are your options") 
-print(theobjects)
+print(theobjects)                                       #ADD DIFICULTY LEVELS   
 
 def userinput():
     while True:
