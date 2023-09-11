@@ -11,7 +11,7 @@ if input not in objects:
     falseinput() 
 
 def brute():
-    while True:
+    for x in range(20):
         input(f"Is your object {objects[0]}? Please respond with yes or no: ")
         if input == "yes":
             print("I knew it!") 
