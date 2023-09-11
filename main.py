@@ -1,5 +1,5 @@
 def difficulty():
-    difficultylevel = input("Please choose a difficulty level, easy or hard:")
+    difficultylevel = input("Please choose a difficulty level, easy or hard: ")
     while True:
         if difficultylevel == "easy" or "hard":
             break  
