@@ -1,3 +1,13 @@
+def difficulty():
+    difficultylevel = input("Please choose a difficulty level, easy or hard:")
+    while True:
+        if difficultylevel == "easy" or "hard":
+            break  
+        else:
+            print("Please choose a valid difficulty level")
+            continue
+difficulty()
+
 indexalpha = 0
 theobjects = ['potato', 'test', 'yesandno']
 print("These are your options") 
