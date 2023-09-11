@@ -10,7 +10,7 @@ difficulty()
 
 indexalpha = 0
 theobjects = ['potato', 'test', 'yesandno']
-print("These are your options") 
+print("These are your options, please think of one") 
 print(*theobjects)                                       #ADD DIFICULTY LEVELS   
 
 def userinput():
@@ -31,7 +31,9 @@ def scuffed(indexalpha):
             indexalpha += 1
             continue
 
-if difficulty == "easy":
+if difficulty() == "easy":
     userinput()
-    
-scuffed(indexalpha)
+    scuffed(indexalpha)
+
+if difficulty() == "hard":
+    scuffed(indexalpha)
