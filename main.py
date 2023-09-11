@@ -10,9 +10,7 @@ def userinput():
         else:                          #if the users input is not valid e.g. in the list, the loop conintues
             continue
 
-userinput()                             # This calls the userinput function to get the users input
-
-
+print(userinput)
 
 # def brute():
 #     for x in range(20):
@@ -22,5 +20,7 @@ userinput()                             # This calls the userinput function to g
 #             break
 
 #         elif input == "no":
-#             index += 1
-#             input(f"Is your object {objects[index]}? Please respond with yes or no: ")
+#             indexalpha += 1
+#             input(f"Is your object {objects[indexalpha]}? Please respond with yes or no: ")
+
+userinput()                             # This calls the userinput function to get the users input
