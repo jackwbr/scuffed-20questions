@@ -1,15 +1,16 @@
 objects = ["potato", "test", "object"]
 print(f"Here are your options, please choose one: {', '.join(objects)}")
-index = 0
+indexalpha = 0
 
-def falseinput():
-    input("Please choose a valid option: ")
+def userinput():
+    while True:
+        input0 = input("Please choose an option: ")     
+        if input0 in objects:          #if the users input is valid e.g. in the list, the loop breaks
+            break
+        else:                          #if the users input is not valid e.g. in the list, the loop conintues
+            continue
 
-input("Please choose an option: ")
-
-
-if input not in objects:   
-        falseinput()
+userinput()                             # This calls the userinput function to get the users input
 
 
 
