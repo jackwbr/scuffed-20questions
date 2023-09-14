@@ -7,7 +7,7 @@ def difficulty():
         else:
             print("Please choose a valid difficulty level")
             continue
-difficulty()
+difficulty() 
 
 
 def userinput():
