@@ -31,9 +31,9 @@ def scuffed(indexalpha):
             indexalpha += 1
             continue
 
-if difficulty() == "easy":
+if difficulty == "easy":
     userinput()
     scuffed(indexalpha)
 
-if difficulty() == "hard":
+if difficulty == "hard":
     scuffed(indexalpha)
