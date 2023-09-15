@@ -7,7 +7,6 @@ def difficulty():
         else:
             print("Please choose a valid difficulty level")
             continue
-difficulty() 
 
 
 def userinput():
@@ -29,6 +28,8 @@ def scuffed(indexalpha):
             continue
 
 #END THE DEFINING OF FUNCTIONS
+
+difficulty() 
 
 indexalpha = 0
 theobjects = ['potato', 'test', 'yesandno']
