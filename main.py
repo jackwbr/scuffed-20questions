@@ -1,12 +1,6 @@
 def difficulty():
     difficultylvl = input("Please choose a difficulty level, easy or hard: ")  #EASY MEANS THE COMPUTER GUESSES IT IMMEDIATLY
-    while True:
-        if difficultylvl == "easy" or "hard":
-            return difficultylvl
-            break  
-        else:
-            print("Please choose a valid difficulty level")
-            continue
+    return difficultylvl
 
 
 def userinput():
@@ -34,9 +28,18 @@ difficulty()
 indexalpha = 0
 theobjects = ['potato', 'test', 'yesandno']
 print("These are your options, please think of one") 
-print(*theobjects)                                       #ADD DIFICULTY LEVELS   
+print(*theobjects)                                        
 
 difficultylvl = difficulty()
+
+while True:
+    if difficultylvl == "easy" or "hard":          #CHECK IF DIFFICULTYLVL VARIABLE IS VALID
+        break
+    else: 
+        print("Please choose a valid difficulty level")
+        difficulty()
+
+
 
 if difficultylvl == "easy":
     userinput1 = userinput()
