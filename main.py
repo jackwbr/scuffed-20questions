@@ -1,13 +1,9 @@
-def difficulty():
-        while True:
-            difficultylevel = input("Please select a difficulty level: easy or hard: ")
-            if difficultylevel == "easy":
-             break
-            else:
-                continue
+userinput = ""
 
+def difficultyselect(userinput):
+    userinput = input("Please choose a difficulty level, easy or hard: ")
+    if userinput == "easy" or "hard":
+     return userinput
 
-
-#END OF FUNCTION DEFINITIONS
-
-difficulty()
+difficultyselect(userinput)
+print(userinput)
