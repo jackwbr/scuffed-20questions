@@ -1,15 +1,11 @@
-userinput = ""
-
-def difficultyselect(userinput):
+def difficultyselect():
     while True:
-        userinput = input("Please choose a difficulty level, easy or hard: ")
-        userinput = userinput.lower().strip()
-        if userinput == "easy" or "hard":
-         return userinput
-        
-        else: 
-            print("Please choose a valid input: ")
+        userinput = input("Please select a difficulty, easy or hard: ")
+        if userinput in ("easy", "hard"):
+            print("good")
+            break
+        else:
+            print("Please enter a valid difficulty")
             continue
 
-difficultyselect(userinput)
-print(userinput)
+difficultyselect()
