@@ -1,3 +1,4 @@
+global userinput
 def difficultyselect():
     global userinput
     while True:
