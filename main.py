@@ -1,6 +1,6 @@
 def difficultyselect():
+    global userinput
     while True:
-        global userinput
         userinput = input("Please select a difficulty, easy or hard: ")
         if userinput in ("easy", "hard"):
             break
@@ -16,7 +16,7 @@ def easy():
             userinput = input("Please enter an option from the list above: ")
             if userinput in options:
                 break
-            else:
+            else:     
                 print("Please enter a valid option")
                 continue        
 
