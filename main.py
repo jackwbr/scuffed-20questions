@@ -10,16 +10,19 @@ def difficultyselect():
             continue
 
 def easy():
-    if userinput == "easy":
+        global easydoinput
         options = ["potato", "test", "cheese", "spam", "eggs"]
         print(*options)
         while True:
-            userinput = input("Please enter an option from the list above: ")
+            easydoinput = input("Please enter an option from the list above: ")
             if userinput in options:
                 break
             else:     
                 print("Please enter a valid option")
                 continue        
+
+def easydo():
+    print(easydoinput)
 
 
 #END OF FUNCTION DEFINITIONS
@@ -27,3 +30,7 @@ def easy():
 difficultyselect()
 if userinput == "easy":
     easy()
+
+
+if userinput == "hard":
+    print("hard chosen test")
