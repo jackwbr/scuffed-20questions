@@ -1,4 +1,7 @@
+import time
+options = ["potato", "test", "cheese", "spam", "eggs"]
 global userinput
+
 def difficultyselect():
     global userinput
     while True:
@@ -11,7 +14,6 @@ def difficultyselect():
 
 def easy():
         global easydoinput
-        options = ["potato", "test", "cheese", "spam", "eggs"]
         print(*options)
         while True:
             easydoinput = input("Please enter an option from the list above: ")
@@ -24,13 +26,19 @@ def easy():
 def easydo():
     print(easydoinput)
 
+def harddo():
+    print(options)
+    print("Please think of an option from the list above")
+    time.sleep(2)
+
 
 #END OF FUNCTION DEFINITIONS
 
 difficultyselect()
 if userinput == "easy":
     easy()
+    easydo()
 
 
 if userinput == "hard":
-    print("hard chosen test")
+    harddo()
