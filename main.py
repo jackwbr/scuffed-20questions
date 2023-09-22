@@ -1,4 +1,5 @@
 import time
+indexalpha = 0
 options = ["potato", "test", "cheese", "spam", "eggs"]
 global userinput
 
@@ -27,9 +28,17 @@ def easydo():
     print(easydoinput)
 
 def harddo():
-    print(options)
+    print(*options)
     print("Please think of an option from the list above")
     time.sleep(2)
+    while True:
+        print(f"Is your option {options[indexalpha]}?")
+        isyours = input("Please enter yes or no: ")
+        if isyours == "yes":
+            break
+        else:
+            indexalpha += 1
+            continue
 
 
 #END OF FUNCTION DEFINITIONS
