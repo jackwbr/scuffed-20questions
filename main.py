@@ -30,7 +30,7 @@ def easydo():
 def harddo():
     print(*options)
     print("Please think of an option from the list above")
-    time.sleep(2)
+    time.sleep(4)
     while True:
         print(f"Is your option {options[indexalpha]}?")
         isyours = input("Please enter yes or no: ")
