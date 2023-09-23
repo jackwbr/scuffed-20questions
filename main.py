@@ -1,5 +1,5 @@
 import time
-options = ["potato", "test", "cheese", "spam", "eggs", "sink", "chair", "burger", "Jack", "Laptop"]
+options = ["potato", "test", "cheese", "spam", "eggs", "sink", "chair", "burger", "jack", "laptop"]
 
 def allofit():
     global userinput
