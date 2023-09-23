@@ -1,4 +1,5 @@
 import time
+global indexalpha
 indexalpha = 0
 options = ["potato", "test", "cheese", "spam", "eggs"]
 global userinput
@@ -15,7 +16,7 @@ def difficultyselect():
 
 def easy():
         global easydoinput
-        print(*options)
+        print(*options, sep = ", ")
         while True:
             easydoinput = input("Please enter an option from the list above: ")
             if easydoinput in options:
@@ -32,16 +33,17 @@ def easydo():
         print("What the hell?")
 
 def harddo():
-    print(*options)
+    print(*options, sep = ", ")
     print("Please think of an option from the list above")
     time.sleep(4)
     while True:
-        print(f"Is your option {options[indexalpha]}?")     #ERROR HERE
+        print(f"Is your option {options[indexalpha]}?")   
         isyours = input("Please enter yes or no: ")
         if isyours == "yes":
+            print("Knew it! Good game.")                    #ADD PLAY AGAIN FEATURE
             break
-        else:
-            indexalpha += 1
+        elif isyours == "no":
+            indexalpha = indexalpha + 1
             continue
 
 
