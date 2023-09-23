@@ -35,6 +35,7 @@ def allofit():
             endgame = endgame.strip().lower()    
             if endgame == "yes":
                 print("Alright! Let's go again!")
+                time.sleep(1.5)
                 allofit()
             if endgame == "no":
                 print("Alright! Thanks for playing!")
@@ -47,7 +48,7 @@ def allofit():
         indexalpha = 0
         print(*options, sep = ", ")
         print("Please think of an option from the list above")
-        time.sleep(4)
+        time.sleep(8)
         while True:
             print(f"Is your option {options[indexalpha]}?")   
             isyours = input("Please enter yes or no: ")
