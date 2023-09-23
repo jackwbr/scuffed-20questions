@@ -1,5 +1,6 @@
 import time
 options = ["potato", "test", "cheese", "spam", "eggs", "sink", "chair", "burger", "jack", "laptop"]
+print("Welcome to 20 questions! We can guess what you're thinking of in under 20 questions, gauranteed!")
 
 def allofit():
     global userinput
@@ -7,7 +8,7 @@ def allofit():
     def difficultyselect():
         global userinput
         while True:
-            userinput = input("Welcome to 20 questions! We can guess what you're thinking of in under 20 questions, gauranteed! Please select a difficulty, easy or hard (easy makes it easier for the computer): ")
+            userinput = input("Please select a difficulty, easy or hard (easy makes it easier for the computer): ")
             userinput = userinput.lower().strip()
             if userinput in ("easy", "hard"):
                 break
