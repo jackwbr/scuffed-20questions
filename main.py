@@ -1,7 +1,7 @@
 import time
 options = ["potato", "test", "cheese", "spam", "eggs"]
 
-while True:
+def allofit():
     global userinput
 
     def difficultyselect():
@@ -35,7 +35,7 @@ while True:
             endgame = endgame.strip().lower()    
             if endgame == "yes":
                 print("Alright! Let's go again!")
-                continue
+                allofit()
             if endgame == "no":
                 print("Alright! Thanks for playing!")
                 exit()                   
@@ -58,7 +58,7 @@ while True:
                 if endgame == "yes":
                     print("Alright! Let's go again!")
                     time.sleep(1.5)
-                    continue
+                    allofit()
                 if endgame == "no":
                     print("Ok, thanks for playing!")
                     exit()                #ADD PLAY AGAIN FEATURE
@@ -78,3 +78,5 @@ while True:
 
     if userinput == "hard":
         harddo()
+
+allofit()
