@@ -7,7 +7,7 @@ def allofit():
     def difficultyselect():
         global userinput
         while True:
-            userinput = input("Please select a difficulty, easy or hard: ")
+            userinput = input("Welcome to 20 questions. The game is totally not rigged. Please select a difficulty, easy or hard: ")
             userinput = userinput.lower().strip()
             if userinput in ("easy", "hard"):
                 break
@@ -52,8 +52,8 @@ def allofit():
         print("Please think of an option from the list above")
         time.sleep(8)
         while True:
-            print(f"Is your option {options[indexalpha]}?")
-            print(f"It has taken {guessnum} guesse(s)")   
+            print(f"It has taken {guessnum} guesse(s)")  
+            print(f"Is your option {options[indexalpha]}?") 
             isyours = input("Please enter yes or no: ")
             isyours = isyours.lower().strip()
             if isyours == "yes":
