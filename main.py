@@ -18,21 +18,25 @@ def easy():
         print(*options)
         while True:
             easydoinput = input("Please enter an option from the list above: ")
-            if userinput in options:
+            if easydoinput in options:
                 break
             else:     
                 print("Please enter a valid option")
                 continue        
 
 def easydo():
-    print(easydoinput)
+    easyanswer = input(f"Is {easydoinput} what you were thinking of? ")
+    if easyanswer == "yes":
+        print("Knew it!")
+    else:
+        print("What the hell?")
 
 def harddo():
     print(*options)
     print("Please think of an option from the list above")
     time.sleep(4)
     while True:
-        print(f"Is your option {options[indexalpha]}?")
+        print(f"Is your option {options[indexalpha]}?")     #ERROR HERE
         isyours = input("Please enter yes or no: ")
         if isyours == "yes":
             break
