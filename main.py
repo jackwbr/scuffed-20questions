@@ -1,5 +1,6 @@
 import time
 options = ["potato", "test", "cheese", "spam", "eggs"]
+
 while True:
     global userinput
 
@@ -37,7 +38,7 @@ while True:
                 continue
             if endgame == "no":
                 print("Alright! Thanks for playing!")
-                exit()            #ADD PLAY AGAIN FEATURE          
+                exit()                   
         else:
             print("What the hell?")
 
