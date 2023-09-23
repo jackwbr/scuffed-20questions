@@ -1,5 +1,5 @@
 import time
-options = ["potato", "test", "cheese", "spam", "eggs"]
+options = ["potato", "test", "cheese", "spam", "eggs", "sink", "chair", "burger", "Jack", "Laptop"]
 
 def allofit():
     global userinput
@@ -45,12 +45,15 @@ def allofit():
 
     def harddo():
         global indexalpha
+        global guessnum
+        guessnum = 0
         indexalpha = 0
         print(*options, sep = ", ")
         print("Please think of an option from the list above")
         time.sleep(8)
         while True:
-            print(f"Is your option {options[indexalpha]}?")   
+            print(f"Is your option {options[indexalpha]}?")
+            print(f"It has taken {guessnum} guesse(s)")   
             isyours = input("Please enter yes or no: ")
             isyours = isyours.lower().strip()
             if isyours == "yes":
@@ -66,6 +69,7 @@ def allofit():
                 break
             elif isyours == "no":
                 indexalpha = indexalpha + 1
+                guessnum = guessnum + 1
                 continue
 
 
